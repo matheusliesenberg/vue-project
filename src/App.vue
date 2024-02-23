@@ -3,7 +3,9 @@ import { ref } from 'vue';
 
 const contador = ref(0)
 function descrementar(){
-  contador.value--
+  if(acrementar.value > 0){
+    contador.value--
+  }
 }
 function acrementar(){
   contador.value++
